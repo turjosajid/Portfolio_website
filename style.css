@@ -1,0 +1,240 @@
+	*{
+		box-sizing:box-border;
+	}
+	
+	html, body{
+		height:100%;
+		scroll-behavior:smooth;
+	}
+	
+	body{
+		margin:Auto;
+		background:black;
+	}
+	
+	.full_height{
+		height:100%;
+	}
+
+	
+	#nav{
+		position:fixed;
+		z-index:9999;
+		width:100%;
+	}
+	
+	#nav a{
+		color:#676734;
+		text-decoration:none;
+		font-family:courier new;
+		padding:15px;
+		float:right;
+		
+		border-radius:50%;
+		transition:all .7s ease,transform .7s ease;
+		margin:10px;
+		overflow:hidden;
+		background:white;
+		width:20px;
+		height:20px;
+		font-size:20px;
+		text-align:center;
+		margin-top:40px;
+		user-select:none;
+	}
+	
+	#nav a:hover{
+		background:#676734;
+		color:white;
+		font-weight:bold;
+		
+		border-radius:30%;
+		transform:rotate(360deg);
+	}
+	
+	#nav img{
+		float:left;
+		width:100px;
+		margin-left:50px;
+		margin-top:30px;
+		animation:spin 10s linear infinite;
+	}
+	
+	.navlinks{
+	margin-right:50px;
+	}
+	
+	@keyframes spin{
+		to{transform:rotate(360deg)}
+}
+
+	#pg1{
+		display:flex;align-items:center;
+		justify-content:center;
+		flex-wrap:wrap;
+		align-content:center;
+		background-image:url('cover1.jpg');
+		background-position:center;
+		background-attachment:fixed;
+		background-size:cover;
+		user-select:none;
+		width:100%;
+	}
+	
+	#pg2{
+		background-image:url('cover2.jpg');
+		background-position:center;
+		background-attachment:fixed;
+		background-size:cover;
+	}
+	
+	#pg3{
+		background-image:url('cover5.jpg');
+		background-position:center;
+		background-attachment:fixed;
+		background-size:cover;
+		
+	}
+	
+	#pg4{
+		background-image:url('cover2.jpg');
+		background-position:center;
+		background-attachment:fixed;
+		background-size:cover;
+	}
+
+	#pg1 header{
+		text-align:center;
+		color:White;
+		font-size:100px;
+		font-family:trebuchet MS;
+		animation:fade_up 2s ease;
+		flex:100%;
+		opacity:.8;
+		padding:10px;
+	}
+	
+	#pg1 p{
+		color:white;
+		width:51%;
+		text-align:center;
+		font-family:comic sans ms;
+		animation:fade 2s ease;
+		font-size:20px;opacity:.8;
+	}
+	
+	@keyframes fade{
+		from{opacity:0;}
+		to{opacity:.8;}
+	}
+	
+	@keyframes fade_up{
+		from{opacity:0;margin-top:-30px;}
+		to{opacity:.8;margin-top:0px;}
+	}
+
+	#pg2{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	
+	.profile_pic, .details{
+		display:flex;
+		flex:50%;
+		justify-content:center;
+		flex-wrap:wrap;
+	}
+	
+	.profile_pic img{
+		width:230px;
+		height:230px;
+		border-radius:50%;
+		border:8px solid #676734;
+		box-shadow:5px 5px 25px #1f1f1f,-5px -5px 25px #1f1f1f;
+		user-select:none;
+	}
+	
+	.details{
+		text-shadow:5px 5px 25px #1f1f1f,-5px -5px 25px #1f1f1f;
+		justify-content:left;
+		text-transform:capitalize;
+	}
+	
+	.details header{
+		color:white;flex:100%;
+		text-align:center;
+		font-size:30px;
+		font-family:arial;
+	}
+	
+	.details ul{
+		list-style-type:none; 
+		color:white;
+		font-size:20px;
+		font-family:arial;
+		border-left:2px solid white;
+		width:500px;
+	}
+	
+	.details li{
+		padding:10px;
+	}
+
+	#pg3 header{
+		text-align:center;
+		font-size:30px;
+		color:white;
+		font-family:arial;
+		padding:30px;
+		text-shadow:5px 5px 25px #1f1f1f;
+	}
+	
+	#photogallery{
+		display:flex;
+		justify-content:
+		center;
+		align-items:center;
+	}
+	
+	#photogallery #row{
+		display:flex;
+		padding:50px;
+		justify-content:center;
+		margin-top:0;
+	}
+	
+	#row .column{
+		display:flex;
+		flex:25%;
+		padding: 0 4px;align-items:center;
+		flex-direction:column;
+	}	
+	
+	.column img{
+		width:200px;
+		height:200px;
+		filter:saturate(0%);
+		vertical-align:middle;
+		transition:all .3s;
+		margin-top:10px;
+		transition:all .5s;
+		box-shadow:5px 5px 10px black;
+	}
+	
+	.column img:hover{
+		filter:saturate(100%);
+		box-shadow:5px 5px 25px #1f1f1f,-5px -5px 25px #1f1f1f;
+	}
+
+	#pg4{display:flex;flex-direction:column;justify-content:center;align-items:center;height:97%;}
+	.social{width:50%;margin:10px;padding:20px;display:flex;align-items:center;}
+	.social i{font-size:30px;float:left;color:#676734;background:white;height:30px;width:30px;border-radius:50%;padding:10px;}
+	.social p{color:white;font-family:arial;font-size:25px;padding:0;margin:0;margin-left:100px;}
+	
+	#footer{display:flex;background:black;height:3%;justify-content:center;align-items:center;font-family:courier;}
+	
+	
+
+	
